@@ -1,0 +1,31 @@
+version: "3"
+services:
+  tech_line_bot:
+    image: 'mysql:8.0'
+    container_name: tech_line_bot
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: tech_line_bot
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      TZ: 'Asia/Tokyo'
+    volumes:
+      - './tmp/mysql:/var/lib/mysql'
+    ports:
+      - '33065:3306'
+    tty: true
+
+  app:
+    depends_on:
+      - tech_line_bot
+    container_name: tech_line_bot
+    build:
+      context: .
+      dockerfile: ./DockerFile
+    ports:
+      - "18000:8000"
+    tty: true
+    volumes:
+      - .:/app
+
+
