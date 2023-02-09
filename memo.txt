@@ -1,0 +1,10 @@
+#mysqlに入るコマンド
+mysql -u root -p
+
+# mysqlに入ったら、データベースを確認
+mysql> show databases;
+
+
+
+#fastapi runコマンド
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
