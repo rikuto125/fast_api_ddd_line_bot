@@ -18,7 +18,7 @@ services:
   app:
     depends_on:
       - tech_line_bot
-    container_name: tech_line_bot
+    container_name: tech_line_bot_api
     build:
       context: .
       dockerfile: ./DockerFile

@@ -20,7 +20,6 @@ engine = create_engine(
 
     # ローカル用
     # settings.LOCAL_DATABASE_URL
-
 )
 
 SessionLocal = scoped_session(

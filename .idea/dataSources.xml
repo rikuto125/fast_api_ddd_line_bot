@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306/techdb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="tech_line_bot@127.0.0.1" uuid="b0986ac2-ce2c-4c38-a1c6-f2bdf508ca77">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:33065/tech_line_bot</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
